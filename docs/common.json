@@ -1,11 +1,11 @@
 {
   "items": [
     {
-      "Date": "19 Jan 2026",
+      "Date": "20 Jan 2026",
       "Place": "Shillong",
       "Rows": [
-        { "Direct": "21,01", "House": "6", "Ending": "1" },
-        { "Direct": "87", "House": "9", "Ending": "4" }
+        { "Direct": "11,00", "House": "7", "Ending": "7" },
+        { "Direct": "22", "House": "9", "Ending": "9" }
       ]
     }
   ]
