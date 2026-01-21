@@ -368,3 +368,30 @@ footer {
   padding: 9px 12px;
 }
 
+.dream-controls .search-bar button {
+  cursor: pointer;
+  background: linear-gradient(135deg, #bfdbfe, #93c5fd);
+  color: #0b1220;
+  border: 1px solid rgba(0,0,0,0.06);
+  font-weight: 700;
+}
+
+.dream-controls .search-bar button:hover { filter: brightness(1.05); }
+
+.dream-controls .muted { color: var(--muted); margin-top: 6px; }
+
+@media (max-width: 640px) {
+  .dream-controls .search-bar {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+  }
+  .dream-controls .search-bar input[type="search"] {
+    flex: 1 0 100%;
+    order: 0;
+  }
+  .dream-controls .search-bar select,
+  .dream-controls .search-bar button {
+    flex: 0 0 auto;
+  }
+}
