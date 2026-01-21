@@ -6,9 +6,7 @@ const sessions = ["Morning", "Afternoon", "Evening"];
 fetch("results.json?_=" + new Date().getTime())
   .then((res) => res.json())
   .then((data) => {
-    if (!Array.isArray(data)) data = [];
-
-    // Show current session results (for index/afternoon/evening.html)
+    if (!Array.isArray(data)) data = []/evening.html)
     if (typeof sessionName !== "undefined") {
       const sessionData = data
         .filter((r) => r.Session === sessionName)
@@ -86,12 +84,7 @@ fetch("common.json?_=" + new Date().getTime())
   .then((data) => {
     const box = document.getElementById("common-number-box");
     if (!box) return;
-    const items = data && Array.isArray(data.items) ? data.items : [];
-    if (!items.length) {
-      box.textContent = "No data";
-      return;
-    }
-    const latest = items
+    const items = data && Array.isArray(data.items)st latest = items
       .slice()
       .sort((a, b) => new Date(b.Date) - new Date(a.Date))[0];
     const rows = Array.isArray(latest.Rows) ? latest.Rows : [];
