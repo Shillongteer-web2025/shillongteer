@@ -119,6 +119,4 @@ fetch("common.json?_=" + new Date().getTime())
   })
   .catch((err) => {
     console.error("Error loading common numbers:", err);
-    const box = document.getElementById("common-number-box");
-    if (box) box.textContent = "Error loading";
-  });
+    const box 
